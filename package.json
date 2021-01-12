@@ -1,0 +1,16 @@
+{
+  "name": "myBlog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "/myBlog/",
+  "author": "gaving2016",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.0"
+  }
+}
