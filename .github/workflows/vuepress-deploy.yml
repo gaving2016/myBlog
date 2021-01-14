@@ -10,6 +10,7 @@ jobs:
     - name: Build and Deploy
       uses: jenkey2011/vuepress-deploy@dev
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: gaving2016/myBlog
         TARGET_BRANCH: gh_pages
